@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC">
+    <bpmn:process id="process" isExecutable="false">
+        <bpmn:task id="service"/>
+        <bpmn:task id="service1"/>
+        <bpmn:sequenceFlow id="connector" sourceRef="service" targetRef="service1"/>
+    </bpmn:process>
+    <bpmndi:BPMNDiagram id="diagram">
+        <bpmndi:BPMNPlane id="plane" bpmnElement="process">
+            <bpmndi:BPMNShape id="serviceShape" bpmnElement="service">
+                <dc:Bounds x="150" width="95" height="70"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="service1Shape" bpmnElement="service1">
+                <dc:Bounds x="300" width="95" height="70"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge id="connectorEdge" bpmnElement="connector"/>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "connector",
+    "sourceID": "start",
+    "targetID": "gateway"
+  },
+  {
+    "id": "connector1",
+    "sourceID": "gateway",
+    "targetID": "gateway1"
+  },
+  {
+    "id": "connector2",
+    "sourceID": "gateway1",
+    "targetID": "activity",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector3",
+    "sourceID": "gateway1",
+    "targetID": "activity1",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector4",
+    "sourceID": "gateway1",
+    "targetID": "activity2",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector5",
+    "sourceID": "gateway1",
+    "targetID": "activity3",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector6",
+    "sourceID": "activity",
+    "targetID": "gateway2",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector7",
+    "sourceID": "activity1",
+    "targetID": "gateway2",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector8",
+    "sourceID": "activity2",
+    "targetID": "gateway2",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector9",
+    "sourceID": "activity3",
+    "targetID": "gateway2",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector10",
+    "sourceID": "gateway2",
+    "targetID": "activityService",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector11",
+    "sourceID": "activityService",
+    "targetID": "gateway3",
+    "type": "Orthogonal"
+  },
+  {
+    "id": "connector12",
+    "sourceID": "gateway3",
+    "targetID": "gateway",
+    "type": "Orthogonal",
+    "annotations": [
+      {
+        "content": "No"
+      }
+    ]
+  },
+  {
+    "id": "connector13",
+    "sourceID": "gateway3",
+    "targetID": "end",
+    "type": "Orthogonal",
+    "annotations": [
+      {
+        "content": "Yes"
+      }
+    ]
+  }
+]

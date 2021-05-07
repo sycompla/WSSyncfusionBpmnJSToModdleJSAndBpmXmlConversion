@@ -1,0 +1,201 @@
+[
+  {
+    "id": "start",
+    "width": 40,
+    "height": 40,
+    "offsetX": 50,
+    "offsetY": 180,
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Event",
+      "event": {
+        "event": "Start"
+      }
+    }
+  },
+  {
+    "id": "gateway",
+    "width": 40,
+    "height": 40,
+    "offsetX": 150,
+    "offsetY": 180,
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Gateway",
+      "gateway": {
+        "type": "Exclusive"
+      }
+    }
+  },
+  {
+    "id": "gateway1",
+    "width": 40,
+    "height": 40,
+    "offsetX": 250,
+    "offsetY": 180,
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Gateway",
+      "gateway": {
+        "type": "Exclusive"
+      }
+    }
+  },
+  {
+    "id": "activity",
+    "width": 80,
+    "height": 50,
+    "offsetY": 80,
+    "offsetX": 350,
+    "annotations": [
+      {
+        "content": "process"
+      }
+    ],
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Activity",
+      "activity": {
+        "activity": "SubProcess",
+        "subProcess": {
+          "boundary": "Call"
+        }
+      }
+    }
+  },
+  {
+    "id": "activity1",
+    "width": 80,
+    "height": 50,
+    "offsetY": 180,
+    "offsetX": 350,
+    "annotations": [
+      {
+        "content": "process1"
+      }
+    ],
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Activity",
+      "activity": {
+        "activity": "SubProcess",
+        "subProcess": {
+          "boundary": "Call"
+        }
+      }
+    }
+  },
+  {
+    "id": "activity2",
+    "width": 80,
+    "height": 50,
+    "offsetY": 280,
+    "offsetX": 350,
+    "annotations": [
+      {
+        "content": "process2"
+      }
+    ],
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Activity",
+      "activity": {
+        "activity": "SubProcess",
+        "subProcess": {
+          "boundary": "Call"
+        }
+      }
+    }
+  },
+  {
+    "id": "activity3",
+    "width": 80,
+    "height": 50,
+    "offsetY": 380,
+    "offsetX": 350,
+    "annotations": [
+      {
+        "content": "process3"
+      }
+    ],
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Activity",
+      "activity": {
+        "activity": "SubProcess",
+        "subProcess": {
+          "boundary": "Call"
+        }
+      }
+    }
+  },
+  {
+    "id": "gateway2",
+    "width": 40,
+    "height": 40,
+    "offsetX": 450,
+    "offsetY": 180,
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Gateway",
+      "gateway": {
+        "type": "Exclusive"
+      }
+    }
+  },
+  {
+    "id": "activityService",
+    "width": 80,
+    "height": 120,
+    "offsetY": 180,
+    "offsetX": 550,
+    "annotations": [
+      {
+        "content": "Decide what to do next"
+      }
+    ],
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Activity",
+      "activity": {
+        "activity": "Task",
+        "task": {
+          "type": "Service"
+        }
+      }
+    }
+  },
+  {
+    "id": "gateway3",
+    "width": 40,
+    "height": 40,
+    "offsetX": 650,
+    "offsetY": 180,
+    "annotations": [
+      {
+        "content": "End process?"
+      }
+    ],
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Gateway",
+      "gateway": {
+        "type": "Exclusive"
+      }
+    }
+  },
+  {
+    "id": "end",
+    "width": 40,
+    "height": 40,
+    "offsetX": 750,
+    "offsetY": 180,
+    "shape": {
+      "type": "Bpmn",
+      "shape": "Event",
+      "event": {
+        "event": "End"
+      }
+    }
+  }
+]
